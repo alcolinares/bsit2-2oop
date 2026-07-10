@@ -9,12 +9,22 @@ public class Book {
         this.isBorrowed = false;
     }
 
-    public String getTitle() { return title; }
-    public String getAuthor() { return author; }
-    public boolean isBorrowed() { return isBorrowed; }
+    public String getTitle() { 
+        return title;
+    }
+    public String getAuthor() { 
+        return author; 
+    }
+    public boolean isBorrowed() {
+        return isBorrowed;
+    }
 
-    public void borrow() { isBorrowed = true; }
-    public void returnBook() { isBorrowed = false; }
+    public void borrow() { 
+        isBorrowed = true;
+    }
+    public void returnBook() { 
+        isBorrowed = false;
+    }
 
     public String describe() {
         String status = isBorrowed ? "Borrowed" : "Available";
